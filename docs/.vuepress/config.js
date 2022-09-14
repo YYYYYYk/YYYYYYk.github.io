@@ -1,6 +1,6 @@
 module.exports = {
   base: "/blog/",
-  title: "首页", // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
+  title: "yk's小屋", // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
   description: "yk's小屋", // meta 中的描述文字，用于SEO
   // 注入到当前页面的 HTML <head> 中的标签
   head: [
@@ -21,14 +21,29 @@ module.exports = {
     nav: [
       { text: "首页", link: "/" },
       {
-        text: "分类",
-        ariaLabel: "分类1",
+        text: "前端基础",
         items: [
-          { text: "子分类1", link: "/pages/folder1/test1.md" },
-          { text: "子分类2", link: "/pages/folder2/test1.md" },
+          { text: "HTML", link: "" },
+          { text: "CSS", link: "" },
+          { text: "js", link: "" },
+          { text: "VUE", link: "" },
+          { text: "REACT", link: "" },
+          { text: "小程序", link: "" },
         ],
       },
-      { text: "markdown-demo", link: "/pages/markdown/demo.md" },
+      {
+        text: "前端进阶", link: ''
+      },
+      {
+        text: "面试", link: ''
+      },
+      {
+        text: '更多',
+        items: [
+          { text: "书签", link: "" },
+          { text: "阅读", link: "" },
+        ]
+      },
       { text: "github", link: "https://github.com/YYYYYYk/blog" },
     ],
     sidebar: {

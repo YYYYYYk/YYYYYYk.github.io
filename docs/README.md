@@ -2,7 +2,7 @@
 home: true
 heroImage: /avatar.png
 heroText: yk's前端小屋
-tagline: 知识生活记录
+tagline: 知识记录生活
 actionText: 马上进入 →
 actionLink: /pages/folder1/test1.md
 features:
