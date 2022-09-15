@@ -32,17 +32,25 @@ module.exports = {
         ],
       },
       {
-        text: "前端进阶", link: ''
+        text: "前端进阶",
+        items: [
+          { text: "nodejs", link: "" },
+          { text: "webpack", link: "" },
+          { text: "工程化", link: "" },
+          { text: "服务端", link: "" },
+          { text: "其他", link: "" },
+        ],
       },
       {
-        text: "面试", link: ''
+        text: "面试",
+        link: "",
       },
       {
-        text: '更多',
+        text: "更多",
         items: [
           { text: "书签", link: "" },
           { text: "阅读", link: "" },
-        ]
+        ],
       },
       { text: "github", link: "https://github.com/YYYYYYk/blog" },
     ],
