@@ -1,7 +1,9 @@
+const utils = require('./utils')
+
 module.exports = {
   base: "/blog/",
-  title: "yk's小屋", // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
-  description: "yk's小屋", // meta 中的描述文字，用于SEO
+  title: "前端小屋", // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
+  description: "yk's前端小屋", // meta 中的描述文字，用于SEO
   // 注入到当前页面的 HTML <head> 中的标签
   head: [
     [
@@ -48,21 +50,12 @@ module.exports = {
       {
         text: "更多",
         items: [
-          { text: "书签", link: "" },
+          { text: "书签", link: "/pages/website/" },
           { text: "阅读", link: "" },
         ],
       },
       { text: "github", link: "https://github.com/YYYYYYk/blog" },
     ],
-    sidebar: {
-      "/pages/folder1/": [
-        {
-          title: "测试菜单1", // 必要的
-          collapsable: false, // 可选的, 默认值是 true,
-          sidebarDepth: 1, // 可选的, 默认值是 1
-          children: [["test1.md", "子菜单1"]],
-        },
-      ],
-    },
+    sidebar: 'auto'
   },
 }

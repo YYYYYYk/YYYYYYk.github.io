@@ -1,0 +1,50 @@
+# 网站
+
+## css
+
+- [animista.net](https://animista.net/) 常用的动画效果里面都有
+- [codepen](https://codepen.io/) 很多css的小案例
+- [Hover](http://ianlunn.github.io/Hover/) 鼠标悬浮效果
+- [CSS-Inspiration](https://chokcoco.github.io/CSS-Inspiration/#/) CSS灵感
+- [CSS_tricks](https://qishaoxuan.github.io/css_tricks/) CSS小DEMO
+- [uiverse.io](https://uiverse.io/all) 一些按钮、输入框、多选框、loading、卡片等样式
+- [https://gradihunt.com/](https://gradihunt.com/) 渐变色
+
+## 下载
+
+- [crxdl.com](https://crxdl.com/) 谷歌插件下载
+
+## 工具
+
+- [fanyi.baidu](https://fanyi.baidu.com/) 百度翻译
+
+- [caniuse.com](https://caniuse.com/) 检查浏览器是否支持某些API
+
+- [carbon.now](https://carbon.now.sh/) 生成好看的代码图片块
+
+- [codelf](https://unbug.github.io/codelf/) 开发变量命名
+
+- [tinypng](https://tinypng.com/) 图片压缩
+
+- [https://sunpma.com/other/rgb/](https://sunpma.com/other/rgb/) 颜色进制转换
+
+- [https://tool.oschina.net/codeformat/js/](https://tool.oschina.net/codeformat/js/) 代码格式化
+
+  ### 地图工具
+
+  - [datav.aliyun](https://datav.aliyun.com/portal/school/atlas/area_selector) 阿里云数据可视化平台
+
+  - [strerr.com](https://www.strerr.com/geojson/geojson.html#map=14/30.8937/121.8886) GeoJSON在线编辑
+  - [poi86.coml](http://www.poi86.com/poi/amap.html) POI数据
+
+## 开发
+
+- [astexplorer.net](https://astexplorer.net/) AST生成树
+- [guide.aotu](https://guide.aotu.io/docs/) 代码规范
+
+
+
+## 办公
+
+- [https://easypdf.com/cn](https://easypdf.com/cn) 在线pdf转换
+- 
