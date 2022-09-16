@@ -12,7 +12,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "prettier": "^2.7.1",
     "vue-template-compiler": "^2.7.10",
     "vuepress": "^1.9.7"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "preserve": "never"
   }
 }
