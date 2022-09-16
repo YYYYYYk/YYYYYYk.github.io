@@ -1,6 +1,3 @@
-const sidebarMap = [
-    { title: '书签', dirname: 'website' },
-  ]
-  
-  module.exports = sidebarMap
-  
+const sidebarMap = [{ title: '', dirname: 'website' }]
+
+module.exports = sidebarMap
