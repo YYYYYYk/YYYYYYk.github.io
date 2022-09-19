@@ -51,12 +51,13 @@ module.exports = {
         text: '更多',
         items: [
           { text: '书签', link: '/pages/website/' },
-          { text: '阅读', link: '' },
+          { text: '阅读', link: '/pages/reading/书籍' },
         ],
       },
       { text: 'github', link: 'https://github.com/YYYYYYk/blog' },
     ],
     // sidebar: "auto",
     sidebar: utils.inferSiderbars(),
+    sidebarDepth: 3,
   },
 }

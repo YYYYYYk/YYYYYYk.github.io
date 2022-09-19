@@ -3,10 +3,10 @@
 ## css
 
 - [animista.net](https://animista.net/) 常用的动画效果里面都有
-- [codepen](https://codepen.io/) 很多css的小案例
+- [codepen](https://codepen.io/) 很多 css 的小案例
 - [Hover](http://ianlunn.github.io/Hover/) 鼠标悬浮效果
-- [CSS-Inspiration](https://chokcoco.github.io/CSS-Inspiration/#/) CSS灵感
-- [CSS_tricks](https://qishaoxuan.github.io/css_tricks/) CSS小DEMO
+- [CSS-Inspiration](https://chokcoco.github.io/CSS-Inspiration/#/) CSS 灵感
+- [CSS_tricks](https://qishaoxuan.github.io/css_tricks/) CSS 小 DEMO
 - [uiverse.io](https://uiverse.io/all) 一些按钮、输入框、多选框、loading、卡片等样式
 - [https://gradihunt.com/](https://gradihunt.com/) 渐变色
 
@@ -18,7 +18,7 @@
 
 - [fanyi.baidu](https://fanyi.baidu.com/) 百度翻译
 
-- [caniuse.com](https://caniuse.com/) 检查浏览器是否支持某些API
+- [caniuse.com](https://caniuse.com/) 检查浏览器是否支持某些 API
 
 - [carbon.now](https://carbon.now.sh/) 生成好看的代码图片块
 
@@ -34,17 +34,14 @@
 
   - [datav.aliyun](https://datav.aliyun.com/portal/school/atlas/area_selector) 阿里云数据可视化平台
 
-  - [strerr.com](https://www.strerr.com/geojson/geojson.html#map=14/30.8937/121.8886) GeoJSON在线编辑
-  - [poi86.coml](http://www.poi86.com/poi/amap.html) POI数据
+  - [strerr.com](https://www.strerr.com/geojson/geojson.html#map=14/30.8937/121.8886) GeoJSON 在线编辑
+  - [poi86.coml](http://www.poi86.com/poi/amap.html) POI 数据
 
 ## 开发
 
-- [astexplorer.net](https://astexplorer.net/) AST生成树
+- [astexplorer.net](https://astexplorer.net/) AST 生成树
 - [guide.aotu](https://guide.aotu.io/docs/) 代码规范
-
-
 
 ## 办公
 
-- [https://easypdf.com/cn](https://easypdf.com/cn) 在线pdf转换
-- 
+- [https://easypdf.com/cn](https://easypdf.com/cn) 在线 pdf 转换
