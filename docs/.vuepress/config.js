@@ -60,4 +60,7 @@ module.exports = {
     sidebar: utils.inferSiderbars(),
     sidebarDepth: 3,
   },
+  plugins: [
+    "vuepress-plugin-cat",
+  ]
 }
