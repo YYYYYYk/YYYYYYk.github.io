@@ -25,7 +25,7 @@ module.exports = {
       {
         text: '前端基础',
         items: [
-          { text: 'HTML', link: '' },
+          { text: 'HTML', link: '/pages/html/base' },
           { text: 'CSS', link: '' },
           { text: 'js', link: '' },
           { text: 'VUE', link: '' },
@@ -62,5 +62,12 @@ module.exports = {
   },
   plugins: [
     "vuepress-plugin-cat",
-  ]
+  ],
+  configureWebpack: {
+    resolve: {
+      alias: {
+        // '@alias': 'path/to/some/dir'
+      }
+    }
+  }
 }
