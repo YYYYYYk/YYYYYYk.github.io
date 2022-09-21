@@ -26,7 +26,7 @@ module.exports = {
         text: '前端基础',
         items: [
           { text: 'HTML', link: '/pages/html/base' },
-          { text: 'CSS', link: '' },
+          { text: 'CSS', link: '/pages/css/base' },
           { text: 'js', link: '' },
           { text: 'VUE', link: '' },
           { text: 'REACT', link: '' },
