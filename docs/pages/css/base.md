@@ -128,27 +128,30 @@ box-sizing: inherit;   // 继承父元素的box-sizing属性的值
 
 ## flex布局
 弹性布局，外部盒子称之为`容器`，内部盒子称之为`项目`
-### 容器属性（5个）
-**flex-direction(主轴排列方向):** row(默认) | column  | row-reverse | column-reverse
 
-**flex-wrap(是否换行):** no-wrap(默认) | wrap | wrap-reverse 
+**1. 容器属性（5个）**
 
-**Flex-flow(上述2者缩写):** row | no-wrap;
+`flex-direction(主轴排列方向)`: row(默认) | column  | row-reverse | column-reverse
 
-**Justifiy-content(主轴对齐方式):** flex-start | flex-end | center | space-between | space-around
+`flex-wrap(是否换行)`: no-wrap(默认) | wrap | wrap-reverse 
 
-**Align-items(纵轴):** flex-start | flex-end | center | stretch(侧抽拉伸) | baseline（类似水平线对齐）
+`Flex-flow(上述2者缩写)`: row | no-wrap;
 
-### 项目属性
-**order(定义项目的排序顺序):** 默认为0，数值越小，排列越前，可以为负值
+`Justifiy-content(主轴对齐方式)`: flex-start | flex-end | center | space-between | space-around
 
-**Flex-grow(定义项目的放大比列):** 默认为0，即使有剩余空间，也不做放大 （项目等值情况则等分剩余空间）
+`Align-items(纵轴)`: flex-start | flex-end | center | stretch(侧抽拉伸) | baseline（类似水平线对齐）
 
-**flex-shrink(定义项目的缩小比例):** 默认为1，如果空间不足，该项目将缩小（若有一个值为0且空间不足，该项目不会缩小）（若有所有值为0且空间不足，则会造成溢出但不换行，因为默认不换行） 
+**2. 项目属性**
 
-**Flex-basis(定义项目占的主轴空间):** 默认为auto，可设置固定宽度（仅空间充足情况，空间不足的话仍然会缩小）
+`order(定义项目的排序顺序)`: 默认为0，数值越小，排列越前，可以为负值
 
-**align-self(单个项目侧轴对齐方式)：** 默认是auto，表示继承父类的align-items的属性值。其他值等同于align-items
+`Flex-grow(定义项目的放大比列)`: 默认为0，即使有剩余空间，也不做放大 （项目等值情况则等分剩余空间）
+
+`flex-shrink(定义项目的缩小比例)`: 默认为1，如果空间不足，该项目将缩小（若有一个值为0且空间不足，该项目不会缩小）（若有所有值为0且空间不足，则会造成溢出但不换行，因为默认不换行） 
+
+`Flex-basis(定义项目占的主轴空间)`: 默认为auto，可设置固定宽度（仅空间充足情况，空间不足的话仍然会缩小）
+
+`align-self(单个项目侧轴对齐方式)`: 默认是auto，表示继承父类的align-items的属性值。其他值等同于align-items
 
 ::: tip flex缩写(grow,shrink,basis)
 Flex: 默认值 0  1  auto，对应上面3个默认值
@@ -161,13 +164,42 @@ none （0  0  auto）; 表示空间不足时，该item依旧保持原有宽度 �
 flex:1;  表示占满剩余空间大小，若剩余空间不足则该item项不显示!
 :::
 
+## 文章
+- [less中变量的使用](https://segmentfault.com/a/1190000037649660)
+  
+- [iphone刘海屏适配](https://blog.csdn.net/qq_42354773/article/details/81018615)
+
 ## TIPS
 ### 1. 各种loader
 
-css-loader是将css转化为js（因为不能直接require .css文件），从而可以从js中引入css
+`css-loader`是将css转化为js（因为不能直接require .css文件），从而可以从js中引入css
 
-style-loader是将js样式（css-loader生成）插入head
+`style-loader`是将js样式（css-loader生成）插入head
 
 ExtractTextPlugin是将css从js中提取出来
 
 css modules是解决css命名冲突问题，vue中可直接通过scoped解决。
+
+### 2. 判断iPhone刘海屏
+```js
+function hasNotch() {
+  let proceed = false
+  let div = document.createElement('div')
+  if (CSS.supports('padding-bottom: env(safe-area-inset-bottom)')) {
+    div.style.paddingBottom = 'env(safe-area-inset-bottom)'
+    proceed = true
+  } else if (CSS.supports('padding-bottom: constant(safe-area-inset-bottom)')) {
+    div.style.paddingBottom = 'constant(safe-area-inset-bottom)'
+    proceed = true
+  }
+  if (proceed) {
+    document.body.appendChild(div)
+    let calculatedPadding = window.parseInt(window.getComputedStyle(div).paddingBottom)
+    document.body.removeChild(div)
+    if (calculatedPadding > 0) {
+    return true
+    }
+  }
+  return false
+}
+```
