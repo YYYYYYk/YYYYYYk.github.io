@@ -1,1 +1,41 @@
 # QA
+## 各种单位
+1. pm
+
+像素，用ps无限放大图片即可看到一个个小方格即像素，**显示器不同的分辨率像素显示也不同**，所以电脑高分辨率需做自适应
+
+2. em
+   
+相对长度单位，相当于**当前对象内文本的fontsize**（如果没设置文本尺寸，则相对于浏览器默认的字体尺寸，也就是16px）  
+::: tip
+这样计算的话。如果没有设置字体尺寸就是1em = 16px。
+
+如果使用em的话，有个好的建议，就是将body的font-size设置成62.5%，也就是16px * 62.5% =   10px。这样的话  1em = 10px，方便我们计算。
+:::
+3. rem
+   
+css3新增的单位，仍然是相对长度单位，**相对的是html根元素的fontsize**，用于适配各种移动设备。
+```js
+const setHtmlFontSize = () => {
+  const htmlDom = document.getElementsByTagName('html')[0];
+  let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+  if (htmlWidth >= 750) {
+    htmlWidth = 750;
+  }
+  if (htmlWidth <= 320) {
+    htmlWidth = 320;
+  }
+  htmlDom.style.fontSize = htmlWidth / 7.5+'px';  // 以750px为设计稿，1rem = 100px
+};
+window.onresize = setHtmlFontSize；
+setHtmlFontSize()
+```
+
+4. vw/vh
+   
+**相对于设备可视区域的单位**, 100vw即整个屏幕宽度。
+
+5. rpx
+
+**小程序**专有单位，是以iphone6为设计稿，规定屏幕750rpx，而iphone6屏幕宽度是375px，对应关系就是1px=2rpx。
+

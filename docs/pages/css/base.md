@@ -24,7 +24,7 @@ a~b:  选取a同级后面的所有b
 ```css
 a[href] {color:red;}   // a标签内含href属性则会生效
 ```
-## background
+## 背景background
 - [CSS中background的用法](https://www.cnblogs.com/sheshou/p/5202947.html)
 
 **background-color || background-image || background-repeat || background-attachment || background-size || background-clip || background-position**
@@ -36,7 +36,7 @@ a[href] {color:red;}   // a标签内含href属性则会生效
 4. 针对精灵图(雪碧图)，通过background-position（x，y）来定位相应的图片。如（10px, 10px）像右像向下移动10px；
 :::
 
-## transfrom
+## 位移transfrom
 **属性值**
 - translate(x,y)、translateX(x)、translateY(y)、translateZ(z)、translate3d(x,y,z) 定义位置的移动距离
 - scale(x,y)、scaleX(x)、scaleY(y)、scaleZ(z)、scale3d(x,yz) 定义元素的缩放比例
@@ -44,6 +44,11 @@ a[href] {color:red;}   // a标签内含href属性则会生效
 - skew(x-angle,y-angle)、skewX(angle)、skewY(angle) 定义元素的倾斜度
 ::: tip
 可以为transform添加动画： transition：transform  1s;
+:::
+
+## 图片img
+::: tip
+不设置宽高原图显示，设置宽高会自适应显示
 :::
 
 ## 动画
@@ -63,4 +68,106 @@ animation动画有3个事件：
   重复运动事件: webkitAnimationIteration
 :::
 
+## 盒模型
+组成： 从外到内包括4部分，margin + border + padding + content
 
+1. **标准盒模型（W3C）：** width = 内容的宽度
+2. **怪异盒模型(IE盒模型)：**  width= 内容的宽度 + padding值 + border值
+   
+```css
+box-sizing: content-box;   // 默认的W3C盒子模型，也叫标准盒子模型
+box-sizing: border-box;   // IE盒模型，也叫怪异盒模型
+box-sizing: inherit;   // 继承父元素的box-sizing属性的值
+```
+
+## z-index
+决定了`同一父元素下`的同级子元素的堆叠顺序
+::: tip
+只要不是默认值static，其他的absolute、relative、fixed都可以使z-index生效。
+
+失效情况: 
+1. 父元素的z-index更小，导致元素被遮挡
+
+2. 该元素static定位
+:::
+
+## 定位方式
+**1. positioin：relative**
+
+定位后 `空间不释放`，相对于`初始位置`定位
+<center>
+<img src="../../.vuepress/public/css/1.png" width="300px" />
+</center>
+
+**2. position：absolute**
+
+定位后`空间释放`，若`除static定位外`的第一个有定位属性的父元素进行定位，若无则相对于body定位 ，所以一般子绝父相
+<center>
+<img src="../../.vuepress/public/css/2.png" width="300px" />
+</center>
+
+**3. position：fixed**
+
+定位后`空间释放`，相对于`可视页面`定位，所以即使有滚动条也不影响
+
+**失效情况：** 只要父级元素中存在transform属性都会使该fixed定位失效，即相对该祖先元素定位
+
+**4. [postion： sticky](https://juejin.cn/post/6844904087486464007)**
+
+粘性定位，比如某个某个元素滑到底时需做吸顶样式。
+
+需设置上下左右4个值的一个，并且父元素不能设置overflow: hidden, 否则失效
+
+缺点：IE不支持，低版本的浏览器也不支持; z-index无效。
+
+## 	浮动float
+1. 浮动的元素，会`脱离文档流，空间释放`
+2. 造成的问题：子元素浮动，若父元素高度不够或未设置高度，会造成父盒子高度坍塌。
+3. 消除浮动有3种方法，见面试相关
+4. 浮动布局一般在末尾都要做清除浮动处理，可设置伪元素解决
+
+## flex布局
+弹性布局，外部盒子称之为`容器`，内部盒子称之为`项目`
+### 容器属性（5个）
+**flex-direction(主轴排列方向):** row(默认) | column  | row-reverse | column-reverse
+
+**flex-wrap(是否换行):** no-wrap(默认) | wrap | wrap-reverse 
+
+**Flex-flow(上述2者缩写):** row | no-wrap;
+
+**Justifiy-content(主轴对齐方式):** flex-start | flex-end | center | space-between | space-around
+
+**Align-items(纵轴):** flex-start | flex-end | center | stretch(侧抽拉伸) | baseline（类似水平线对齐）
+
+### 项目属性
+**order(定义项目的排序顺序):** 默认为0，数值越小，排列越前，可以为负值
+
+**Flex-grow(定义项目的放大比列):** 默认为0，即使有剩余空间，也不做放大 （项目等值情况则等分剩余空间）
+
+**flex-shrink(定义项目的缩小比例):** 默认为1，如果空间不足，该项目将缩小（若有一个值为0且空间不足，该项目不会缩小）（若有所有值为0且空间不足，则会造成溢出但不换行，因为默认不换行） 
+
+**Flex-basis(定义项目占的主轴空间):** 默认为auto，可设置固定宽度（仅空间充足情况，空间不足的话仍然会缩小）
+
+**align-self(单个项目侧轴对齐方式)：** 默认是auto，表示继承父类的align-items的属性值。其他值等同于align-items
+
+::: tip flex缩写(grow,shrink,basis)
+Flex: 默认值 0  1  auto，对应上面3个默认值
+
+它有2个快捷值 auto（1  1  auto）;  表示空间剩余，该item项会填充剩余空间，grow为1
+
+none （0  0  auto）; 表示空间不足时，该item依旧保持原有宽度 ，shrink为0
+:::
+::: warning
+flex:1;  表示占满剩余空间大小，若剩余空间不足则该item项不显示!
+:::
+
+## TIPS
+### 1. 各种loader
+
+css-loader是将css转化为js（因为不能直接require .css文件），从而可以从js中引入css
+
+style-loader是将js样式（css-loader生成）插入head
+
+ExtractTextPlugin是将css从js中提取出来
+
+css modules是解决css命名冲突问题，vue中可直接通过scoped解决。

@@ -1,5 +1,3 @@
-
-
 # DEMO
 ## 1.简易的table表格
   <HTML-TableDemo />
