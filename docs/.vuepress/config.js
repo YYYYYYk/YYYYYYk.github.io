@@ -27,7 +27,7 @@ module.exports = {
         items: [
           { text: 'HTML', link: '/pages/html/base' },
           { text: 'CSS', link: '/pages/css/base' },
-          { text: 'js', link: '' },
+          { text: 'js', link: '/pages/js/base' },
           { text: 'VUE', link: '' },
           { text: 'REACT', link: '' },
           { text: '小程序', link: '' },

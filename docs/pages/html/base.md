@@ -42,3 +42,12 @@
   text-align: justify;
   letter-spacing: 1px;
   ```
+### 页面定位
+- 滚动到指定区域
+  ```js
+  Dom.scrollIntoView(); 
+  ```
+- 滚动到页面顶部
+  ```js
+  window.scroll(0,0)
+  ```
