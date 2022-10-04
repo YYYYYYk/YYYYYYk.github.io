@@ -2,7 +2,7 @@ const utils = require('./utils')
 
 module.exports = {
   base: '/blog/',
-  title: '前端小屋', // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
+  title: '首页', // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
   description: "yk's前端小屋", // meta 中的描述文字，用于SEO
   // 注入到当前页面的 HTML <head> 中的标签
   head: [

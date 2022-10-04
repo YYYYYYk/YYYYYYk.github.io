@@ -16,6 +16,20 @@
 :::
 
 ## 纯函数、高阶函数、函数柯里化
+ **纯函数**: 一个函数的返回结果只依赖其参数，并且执行过程中没有副作用
+
+ **高阶函数**: 符合下面2者之一即可
+  1. 若一个函数，接收的参数是个函数，那么可称之为高阶函数
+  2. 若一个函数，返回值是个函数。
+   
+::: tip
+常见的高阶函数： Promise、settimeout、arr.map
+:::
+
+**[函数柯里化](https://blog.csdn.net/m0_52409770/article/details/123359123?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-123359123-blog-123234634.pc_relevant_multi_platform_whitelistv3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-123359123-blog-123234634.pc_relevant_multi_platform_whitelistv3&utm_relevant_index=1)**: 通过函数调用继续返回函数的方式，实现多次接受参数最后统一处理的编码形式。
+
+
+
 
 
 
