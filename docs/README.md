@@ -4,7 +4,7 @@ heroImage: /avatar.png
 heroText: Yk's notebook
 tagline: 知识记录生活
 actionText: 马上进入 →
-actionLink: /pages/website/
+actionLink: /pages/html/01_base
 # features:
 #   - title: 简洁至上
 #     details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。

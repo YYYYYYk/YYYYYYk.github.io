@@ -1,15 +1,13 @@
 # 其他
 
-## dos命令
+## dos常用命令
 
-```js
+```
 pwd  显示当前路径
 cd ～  进入根路径
 ls 展示当前路径下的文件。-a 包括隐藏文件
 clear 清屏
 touch ～/.zshrc   在根路径创建.zshrc文件
-
-
 ```
 
 ## nvm
@@ -24,7 +22,6 @@ nvm list 已安装的node
 nvm list available 可安装的nvm
 nvm i 版本号
 nvm use 版本号
-
 ```
 
  
