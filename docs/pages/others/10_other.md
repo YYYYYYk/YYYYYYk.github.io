@@ -17,11 +17,11 @@ touch ～/.zshrc   在根路径创建.zshrc文件
 mac遇到的问题 [zsh: command not found: nvm](https://blog.csdn.net/zm_miner/article/details/124850215)
 
 ```js
-nvm current 当前版本号
-nvm list 已安装的node
-nvm list available 可安装的nvm
-nvm i 版本号
-nvm use 版本号
+  nvm current 当前版本号
+  nvm list 已安装的node
+  nvm list available 可安装的nvm
+  nvm i 版本号
+  nvm use 版本号
 ```
 
  
