@@ -1,27 +1,85 @@
 # 其他
 
-## dos常用命令
+## markdown语法
+### 标题
+```markdown
+# 这是一级标题
+## 这是二级标题
+### 这是三级标题
+#### 这是四级标题
+```
+### 字体
+```md
+*这是倾斜的文字*
+**这是加粗的文字**
+***这是斜体加粗的文字***
+~~这是加删除线的文字~~
+```
+### 引用
+```md
+>这是引用的内容
+>>这是引用的内容
+>>>这是引用的内容
+```
+### 分割线
+```md
+// 三个或者三个以上的 - 或者 * 都可以
+---
+----
+***
+*****
+```
+### 图片
+```md
+![图片alt](图片地址)
+```
+### 超链接
+```md
+[超链接名](超链接地址)
+```
+### 列表
+#### 无序列表
+```md
+'-' + '空格' + 内容
+```
+#### 有序列表
+```md
+数字 + '空格' + 内容
+```
+### 代码
+```md
+单行 ``
+代码块 ```
+```
+
+### vuePress拓展
+#### 自定义容器
+```md
+::: tip
+This is a tip
+:::
+
+::: warning
+This is a warning
+:::
+
+::: danger rename
+This is a dangerous warning
+:::
 
 ```
-pwd  显示当前路径
-cd ～  进入根路径
-ls 展示当前路径下的文件。-a 包括隐藏文件
-clear 清屏
-touch ～/.zshrc   在根路径创建.zshrc文件
+
+#### 代码块中高亮显示行
+```md
+  ``` js{4}
+  export default {
+    data () {
+      return {
+        msg: 'Highlighted!'
+      }
+    }
+  }```
 ```
 
-## nvm
-
-先卸载掉已有的npm然后安装
-
-mac遇到的问题 [zsh: command not found: nvm](https://blog.csdn.net/zm_miner/article/details/124850215)
-
-```js
-  nvm current 当前版本号
-  nvm list 已安装的node
-  nvm list available 可安装的nvm
-  nvm i 版本号
-  nvm use 版本号
-```
 
  

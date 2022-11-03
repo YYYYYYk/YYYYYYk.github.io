@@ -64,7 +64,7 @@
 ## 4. 三角形
 <CSS-TriangleDemo />
 
-## 5. 小demo
+## 5. 背景结合文字居中
 <CSS-List />
 
 ---

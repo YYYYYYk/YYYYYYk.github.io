@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <div class="triangle1"></div>
-    <pre><code ref="code-container" class="language-css">/* border创建,底边颜色保留 */
+    <pre><code ref="code-container" class="language-css">
+  /* border创建,底边颜色保留 */
   .triangle1 {
     width: 0;
     height: 0;

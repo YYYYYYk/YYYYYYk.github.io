@@ -1,5 +1,5 @@
 # TIPS
-## 1. 各种loader
+## 1. 各种loader含义
 
 `css-loader`是将css转化为js（因为不能直接require .css文件），从而可以从js中引入css
 
@@ -31,4 +31,8 @@ function hasNotch() {
   }
   return false
 }
+```
+## 3. 文本域右下角不可拖拽
+```html
+  <textarea  style="resize: none;"></textarea>
 ```

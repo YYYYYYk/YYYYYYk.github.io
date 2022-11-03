@@ -24,7 +24,8 @@ a~b:  选取a同级后面的所有b
 ```css
 a[href] {color:red;}   // a标签内含href属性则会生效
 ```
-## 背景background
+## 常见属性
+### 背景background
 - [CSS中background的用法](https://www.cnblogs.com/sheshou/p/5202947.html)
 
 **background-color || background-image || background-repeat || background-attachment || background-size || background-clip || background-position**
@@ -36,7 +37,7 @@ a[href] {color:red;}   // a标签内含href属性则会生效
 4. 针对精灵图(雪碧图)，通过background-position（x，y）来定位相应的图片。如（10px, 10px）像右像向下移动10px；
 :::
 
-## 位移transfrom
+### 位移transfrom
 **属性值**
 - translate(x,y)、translateX(x)、translateY(y)、translateZ(z)、translate3d(x,y,z) 定义位置的移动距离
 - scale(x,y)、scaleX(x)、scaleY(y)、scaleZ(z)、scale3d(x,yz) 定义元素的缩放比例
@@ -46,12 +47,12 @@ a[href] {color:red;}   // a标签内含href属性则会生效
 可以为transform添加动画： transition：transform  1s;
 :::
 
-## 图片img
+### 图片img
 ::: tip
 不设置宽高原图显示，设置宽高会自适应显示
 :::
 
-## 动画
+### 动画
 - [CSS动画与transform属性](https://juejin.cn/post/7051148335708651528)
 
 **3种实现动画的方式: transtion, animation, transform**
@@ -67,6 +68,19 @@ animation动画有3个事件：
   
   重复运动事件: webkitAnimationIteration
 :::
+### z-index
+决定了`同一父元素下`的同级子元素的堆叠顺序
+::: tip
+只要不是默认值static，其他的absolute、relative、fixed都可以使z-index生效。
+
+失效情况: 
+1. 父元素的z-index更小，导致元素被遮挡
+
+2. 该元素static定位
+:::
+### vertical-align
+- [关于vertical-align你应该知道的一切](https://juejin.cn/post/6844904084885995528)
+
 
 ## 盒模型
 组成： 从外到内包括4部分，margin + border + padding + content
@@ -79,17 +93,6 @@ box-sizing: content-box;   // 默认的W3C盒子模型，也叫标准盒子模�
 box-sizing: border-box;   // IE盒模型，也叫怪异盒模型
 box-sizing: inherit;   // 继承父元素的box-sizing属性的值
 ```
-
-## z-index
-决定了`同一父元素下`的同级子元素的堆叠顺序
-::: tip
-只要不是默认值static，其他的absolute、relative、fixed都可以使z-index生效。
-
-失效情况: 
-1. 父元素的z-index更小，导致元素被遮挡
-
-2. 该元素static定位
-:::
 
 ## 定位方式
 **1. positioin：relative**
@@ -163,6 +166,7 @@ none （0  0  auto）; 表示空间不足时，该item依旧保持原有宽度 �
 ::: warning
 flex:1;  表示占满剩余空间大小，若剩余空间不足则该item项不显示!
 :::
+
 
 ## 文章
 - [less中变量的使用](https://segmentfault.com/a/1190000037649660)
