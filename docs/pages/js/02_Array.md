@@ -231,12 +231,33 @@ arr.reduce((total, item) => {
 ```
 ###  forEach
 遍历数组，无返回值，该方法会修改原数组
+
+
+
+
+
 ## 对象操作
+### for...in
+遍历对象的key
 ### Object.keys
 遍历对象，返回key所组成的数组
+::: tip vue2源码中的数据劫持
+``` js
+  Object.keys(data).forEach(key => {
+    defineReactive(data, key, data[key])
+  })
+```
+:::
 ### Object.values
 返回由对象value组成的数组
 ### Object.entries
 返回由健key值value对组成的数组
 ### delete Object.aa   
 删除对象的某一属性，返回布尔值
+### Object.create(proto[,propertiesObject])
+创建一个新对象，使用现有的对象来作为新创建对象的原型（prototype）
+``` js
+let oldArrayProto = Array.prototype // 数组原型
+let newArrayProto = Object.create(oldArrayProto) // newArrayProto.__proto__ = oldArrayProto
+```
+> Object.create(null)创建的对象是非常纯净的，原型链的属性和方法都不会携带.
