@@ -1,6 +1,6 @@
 # 工具
 
-## mpm
+## npm
 ### 常用命令
 ``` js
 npm config list // 查看配置
