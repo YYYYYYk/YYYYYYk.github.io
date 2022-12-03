@@ -40,3 +40,5 @@ DOM.classList.contains('类名')  // return true or false
 - `append`，`appendChild`移动成功后会删除旧节点
 - `cloneNode`复制节点，不会删除旧节点
   
+## 浅拷贝
+`Object.assign({}, obj)`

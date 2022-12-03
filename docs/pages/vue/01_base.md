@@ -13,3 +13,22 @@
   3. 数据都通过ajax异步展示到前端
 
 ## 3.h函数
+
+## 组件传值
+- provider & inject
+``` js
+provide() {
+	return {
+		commonData: this.vipCommon,  // 值依赖于data所定义的值
+		getNewstValue: () => this.vipCommon // 能获取响应式的值
+		updateCommonData: this.updateCommonData. // methods
+	}
+},
+inject:['commonData', 'updateCommonData'],
+// 相应式取值
+Computed: {
+    newCommonData() {
+        return this.getNewstValue()
+	}
+}
+```

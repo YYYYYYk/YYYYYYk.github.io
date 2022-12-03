@@ -198,15 +198,11 @@ arr.sort((a,b) => {
 let arr = [{id: 1, name: 'y'},{id: 2, name: 'k'}]
 arr.find(item => item.id === 1) // {id: 1, name: 'y'}
 ```
+
 ### findIndex
 返回符合条件元素的下标位置，未匹配到则返回-1
 ### map
 调用的数组每一个元素传递给指定的函数，并返回新的数组，不修改原数组
-### tip 可用来过滤数组
-``` js
-let arr = [{id: 1, name: 'y'},{id: 2, name: 'k'}]
-arr.find(item => item.id) // [1, 2]
-```
 ### filter
 数组中的每一项传递给指定的函数，返回满足条件组成的新数组，不修改原数组（可巧妙用来去重）
 ::: tip 可用来去重
@@ -231,7 +227,9 @@ arr.reduce((total, item) => {
 ```
 ###  forEach
 遍历数组，无返回值，该方法会修改原数组
-
+::: tip
+foreach是异步的，如果要在里面调用接口，可使用promiseall 或者 普通for循环 或者 for of
+:::
 
 
 
@@ -261,3 +259,17 @@ let oldArrayProto = Array.prototype // 数组原型
 let newArrayProto = Object.create(oldArrayProto) // newArrayProto.__proto__ = oldArrayProto
 ```
 > Object.create(null)创建的对象是非常纯净的，原型链的属性和方法都不会携带.
+
+## DEMO
+1. 手机号(**)
+``` js
+let phone="13177771407";
+phone.split('').splice(3,4,'****').join('');
+```
+2. 元素移动
+``` js
+const target = arr.splice(oldIndex, 1)[0]
+arr.splice(newIndex, 0, target)
+```
+3. 数组过滤 filer
+
