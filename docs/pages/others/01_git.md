@@ -14,10 +14,13 @@ git config --global user.email 'xxx@qq.com' // 修改用户邮箱
  git branch // 查看本地分支
  git checkout master // 切换到本地master分支
 
- git branch -a // 查看原程分支
+ git branch -a // 查看远程分支
  git checkout -b dev origin/dev // 把远程dev分支切换到本地
+
+ git checkout --orphan new_branch // 创建新分支(不包含git提交记录)
  
  git add . // 将所有改变的文件添加到暂存区
- git commit // 将暂存区的内容上传到本地仓库
+ git commit 'fix: 123'// 将暂存区的内容上传到本地仓库
  git push // 将本地仓库内容上传到服务器
+ git push -f // 强制推送，即使有未拉取的代码
 ```

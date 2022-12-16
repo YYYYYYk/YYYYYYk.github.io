@@ -1,15 +1,30 @@
 # TIPS
-## 1. 各种loader含义
 
-`css-loader`是将css转化为js（因为不能直接require .css文件），从而可以从js中引入css
-
-`style-loader`是将js样式（css-loader生成）插入head
-
-ExtractTextPlugin是将css从js中提取出来
-
-css modules是解决css命名冲突问题，vue中可直接通过scoped解决。
-
-## 2. 判断iPhone刘海屏
+## 有关nth选择器
+```css
+  ul li:not(:first-child) { // 排除第一个元素
+    color: red;
+  }
+  li:nth-child(even) {  // 奇odd,2n-1. 偶even,2n
+    color: red
+  }
+  li:nth-child(-n+3) {     // 前3个
+    color: red
+  }
+  li:nth-last-child(-n+3) {     // 最后3个
+    color: red
+  }
+  li:nth-child(n+3) {   // 从第3个之后的
+    color: red
+  }
+  li:nth-child(n+3):nth-child(-n+8) { // 第3个到第8个
+    color: red
+  }
+  li:nth-child(3n), (3n+1), (3n+2) {   // 周期(0,1,2,  3,4,5,  6,7,8....)
+    color: red
+  }
+```
+## 判断iPhone刘海屏
 ```js
 function hasNotch() {
   let proceed = false
@@ -32,7 +47,13 @@ function hasNotch() {
   return false
 }
 ```
-## 3. 文本域右下角不可拖拽
+## 文本域右下角不可拖拽
 ```html
   <textarea  style="resize: none;"></textarea>
+```
+## 刷新页面不记录上次滚动条位置
+``` js
+if (history.scrollRestoration) {
+  history.scrollRestoration = 'manual'
+}
 ```

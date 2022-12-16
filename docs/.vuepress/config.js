@@ -51,6 +51,8 @@ module.exports = {
         items: [
           { text: '书签', link: '/pages/website/01_书签' },
           { text: '阅读', link: '/pages/reading/01_书籍' },
+          { text: '文章', link: '/pages/article/01_时评' },
+          { text: 'TODO', link: '/pages/TODO/todolist' },
         ],
       },
       { text: 'github', link: 'https://github.com/YYYYYYk/blog' },
