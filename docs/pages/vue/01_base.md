@@ -14,7 +14,7 @@
 
 ## 3.h函数
 
-## 组件传值
+## 4.组件传值
 - provider & inject
 ``` js
 provide() {

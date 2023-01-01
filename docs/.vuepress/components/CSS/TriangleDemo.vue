@@ -6,9 +6,8 @@
   .triangle1 {
     width: 0;
     height: 0;
-    border-width: 50px;
+    border: 50px solid;
     border-color: transparent transparent blue transparent;
-    border-style: solid;
   }
   /* clip-path创建,注意浏览器兼容性 */
   .triangle2 {
