@@ -264,7 +264,9 @@ let newArrayProto = Object.create(oldArrayProto) // newArrayProto.__proto__ = ol
 1. 手机号(**)
 ``` js
 let phone="13177771407";
-phone.split('').splice(3,4,'****').join('');
+let phoneArr = phone.split('')
+phoneArr.splice(3,4,'****')
+phoneArr.join('');
 ```
 2. 元素移动
 ``` js

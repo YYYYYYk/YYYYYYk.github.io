@@ -1,6 +1,8 @@
 # 工具
 
 ## npm
+npm官方源地址：https://registry.npmjs.org
+淘宝镜像源地址：https://registry.npm.taobao.org/
 ### 常用命令
 ``` js
 npm config list // 查看配置
@@ -9,6 +11,9 @@ npm i xxx -S  // --save的缩写，是生成环境打包所需要的，在depend
 npm i xxx -D // --save-dev, 是开发环境所需要的，真正上线并不需要这些包, 在devDependencise对象中（如webpack，各种plugins）
 npm i xxx // 啥都不加即 -S
 npm i xxx --registry=https://registry.npm.taobao.org // 使用淘宝镜像下载依赖
+npm config get registry // 查看源地址
+npm config set registry https://registry.npm.taobao.org/ // 设置源地址
+
 ```
 ## nvm
 ::: warning

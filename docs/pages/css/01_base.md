@@ -76,7 +76,7 @@ animation动画有3个事件：
 失效情况: 
 1. 父元素的z-index更小，导致元素被遮挡
 
-2. 该元素static定位
+2. 该元素static定位, 设置absolute定位即可
 :::
 ### vertical-align
 - [关于vertical-align你应该知道的一切](https://juejin.cn/post/6844904084885995528)

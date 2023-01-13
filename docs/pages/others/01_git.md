@@ -23,4 +23,6 @@ git config --global user.email 'xxx@qq.com' // 修改用户邮箱
  git commit 'fix: 123'// 将暂存区的内容上传到本地仓库
  git push // 将本地仓库内容上传到服务器
  git push -f // 强制推送，即使有未拉取的代码
+ git push origin main -f // 强制将本地main分支推送到远程(orign表示远程仓库)
+ git push --set-upstream origin master -f
 ```
