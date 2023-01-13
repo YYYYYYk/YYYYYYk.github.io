@@ -9,8 +9,7 @@ const sidebarMap = [
   { title: 'vue', dirname: 'vue' },
   { title: 'webpack', dirname: 'webpack' },
   { title: '小程序', dirname: 'mini' },
-  { title: '书签', dirname: 'website' },
-  { title: '最近阅读', dirname: 'reading' }
+  { title: '最近阅读', dirname: 'reading' },
 ]
 
 module.exports = sidebarMap
