@@ -21,7 +21,7 @@
   直接输入n个空格会被视为1个空格，而多个 &nbsp + ; 会视为多个空格。
   或者`white-space: pre` 来保留
   
-## 文本末端空白
+## 清除文本末端空白
   ```css
   text-align: justify;
   letter-spacing: 1px;
@@ -29,7 +29,9 @@
 ## 页面定位
 - 滚动到指定区域
   ```js
-  Dom.scrollIntoView(); 
+  document.querySelector(xx).scrollIntoView({
+    behavior: 'smooth'
+  }); 
   ```
 - 滚动到页面顶部
   ```js

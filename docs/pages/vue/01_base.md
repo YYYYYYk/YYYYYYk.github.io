@@ -32,3 +32,18 @@ Computed: {
 	}
 }
 ```
+
+## 4.$event
+参数$event - 事件对象
+``` vuejs
+<div @click='handleMethod()'>
+<div @click='(e) => handleMethod(e)'>
+```
+
+## $on
+
+## $once
+
+## sourcemap
+开启sourcemap主要是为了方便debug，比如报错具体出现在哪个文件夹的哪一行。（线上环境不建议开启，会暴露源码）
+如果不开启话你的debug出来的位置就不是源文件而是编译后的文件了，如es5的看不懂。
