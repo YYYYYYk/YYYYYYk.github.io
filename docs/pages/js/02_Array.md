@@ -1,4 +1,11 @@
 # 字符和数组方法
+::: warning
+``` js
+for (const key in obj) // 遍历对象的key，可遍历数组的下标
+
+for (const key of arr) // 只能遍历数组
+```
+:::
 ## 字符串操作
  let str="abcdabcd";
 ### charAt
@@ -87,6 +94,11 @@ str.match(reg);  //['a','a']
 字符串填充方法,默认是用空格进行填充。第一个参数表示填充后的字符串长度
 ```js
 str.padStart(10,'*')   //**abcdabcd
+```
+### incluedes
+同数组方法，返回布尔值
+``` js
+str.includes('b') // true
 ```
 ## 数组操作
 let arr=['a','b','c','d']
