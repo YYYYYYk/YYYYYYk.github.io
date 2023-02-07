@@ -1,9 +1,9 @@
 # 字符和数组方法
 ::: warning
 ``` js
-for (const key in obj) // 遍历对象的key，可遍历数组的下标
+for (const key in obj) // 遍历对象的key，或数组的下标
 
-for (const key of arr) // 只能遍历数组
+for (const key of arr) // 只能遍历数组，可以与 break、continue和return 配合使用,也就是说 for of 循环可以随时退出循环
 ```
 :::
 ## 字符串操作
@@ -213,6 +213,10 @@ arr.find(item => item.id === 1) // {id: 1, name: 'y'}
 
 ### findIndex
 返回符合条件元素的下标位置，未匹配到则返回-1
+```js
+let arr = [1,2,3]
+arr.findIndex(item => item === 2) // 1
+```
 ### map
 调用的数组每一个元素传递给指定的函数，并返回新的数组，不修改原数组
 ### filter

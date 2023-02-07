@@ -20,3 +20,8 @@ O(n) 如申请长度为n的数组
 ## 常见算法
 ### 欧几里得
 求两个正整数最大公约数的算法
+
+
+
+## tips
+1. 哈希表在js中相当于Map数据结构，Map常用方法有set，get，has，delete，size，clear
