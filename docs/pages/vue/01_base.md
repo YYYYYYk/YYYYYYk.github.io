@@ -1,4 +1,7 @@
 # 基础
+
+## 生命周期
+https://www.cnblogs.com/chenchunbo/p/16395553.html
 ## 1.MVVM
   M: 数据模型 - JS块中data数据
 
