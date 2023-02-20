@@ -10,7 +10,7 @@ const sidebarMap = [
   { title: 'webpack', dirname: 'webpack' },
   { title: '小程序', dirname: 'mini' },
   { title: '最近阅读', dirname: 'reading' },
-  { title: '力扣算法', dirname: 'leetcode' },
+  { title: '力扣', dirname: 'leetcode' },
 ]
 
 module.exports = sidebarMap
