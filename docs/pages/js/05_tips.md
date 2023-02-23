@@ -42,3 +42,7 @@ DOM.classList.contains('类名')  // return true or false
   
 ## 浅拷贝
 `Object.assign({}, obj)`
+
+
+## 日常
+1. break 与 continue在for循环中也能使用

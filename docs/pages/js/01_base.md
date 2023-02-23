@@ -1,5 +1,17 @@
 # 基础
 
+## 二维数组
+``` js
+// 二维数组的创建
+let arr = new Array(10); //表格有10行
+for(let i = 0;i < arr.length; i++){
+  arr[i] = new Array(10).fill(0); //每行有10列
+}
+arr[0][0] = 1
+```
+[创建二维数组](https://juejin.cn/post/6968645442691137572)
+[![pSvHRMD.md.png](https://s1.ax1x.com/2023/02/23/pSvHRMD.md.png)](https://imgse.com/i/pSvHRMD)
+
 ## js数据类型
 - 基本数据类型：`String`、`Number`、`Bool`、`Null`、`Undefined`、`bigInt`、`symbol` 
 - 引用数据类型：`Object`、`array`、`function`
@@ -47,7 +59,6 @@ Object.defineProperty(object1, 'property1', {
   writable: false // 是否可修改值
 });
 ```
-
 
 ## 文章
 - [事件的监听与移除](https://blog.csdn.net/qq_29606781/article/details/67650869)
