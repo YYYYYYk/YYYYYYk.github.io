@@ -38,7 +38,7 @@ module.exports = {
         items: [
           { text: 'webpack', link: '/pages/webpack/01_base' },
           { text: '工程化', link: '/pages/工程化/01' },
-          { text: '服务端', link: '/pages/服务端/01_nodejs' },
+          { text: 'nodejs', link: '/pages/服务端/01_nodejs' },
           { text: '其他', link: '/pages/others/01_git' },
         ],
       },
