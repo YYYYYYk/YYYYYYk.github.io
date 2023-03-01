@@ -48,7 +48,7 @@ module.exports = {
         items: [
           { text: '阅读', link: '/pages/reading/01_书籍' },
           { text: 'Leetcode', link: '/pages/leetcode/01_base' },
-          { text: 'TODO', link: '/pages/TODO/todolist' },
+          { text: 'TODO', link: '/pages/TODO/01_todolist' },
         ],
       },
       // { text: 'github', link: 'https://github.com/YYYYYYk/blog' },
