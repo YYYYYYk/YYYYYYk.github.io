@@ -15,7 +15,7 @@
 
 - 封装 npm 库
 - 大文件上传
-- 项目 webpack 配置
+- 项目 webpack 配置, 打包优化
 - typescript 精通
 - demo 合集
 
