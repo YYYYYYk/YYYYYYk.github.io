@@ -38,3 +38,7 @@ export default {
 若要在 less 或 sass 中使用：
 
 - [在 vue 项目中使用 less 全局变量](https://blog.csdn.net/weixin_55510188/article/details/123686594)
+
+## elmentUI 相关
+
+1. **el-input 中想输入 number 类型**，添加 v-model.number 即可，不用加上 type=number

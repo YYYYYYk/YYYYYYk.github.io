@@ -44,7 +44,7 @@ Computed: {
 }
 ```
 
-## 4.$event
+## $event
 
 参数$event - 事件对象
 

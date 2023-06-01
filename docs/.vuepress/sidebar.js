@@ -12,7 +12,9 @@ const sidebarMap = [
   { title: '小程序', dirname: 'mini' },
   { title: '最近阅读', dirname: 'reading' },
   { title: '力扣', dirname: 'leetcode' },
-  { title: 'TODO', dirname: 'TODO'}
+  // { title: 'TODO', dirname: 'TODO'}
+  { title: 'gwy', dirname: 'gwy'},
+  { title: 'ai', dirname: 'ai'},
 ]
 
 module.exports = sidebarMap
