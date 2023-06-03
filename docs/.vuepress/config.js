@@ -50,7 +50,7 @@ module.exports = {
           { text: 'Leetcode', link: '/pages/leetcode/01_base' },
           // { text: 'TODO', link: '/pages/TODO/01_todolist' },
           { text: 'gwy', link: '/pages/gwy/01_base' },
-          { text: 'ai', link: '/pages/gwy/01_对话' },
+          { text: 'ai', link: '/pages/ai/01_对话' },
         ],
       },
       // { text: 'github', link: 'https://github.com/YYYYYYk/blog' },
