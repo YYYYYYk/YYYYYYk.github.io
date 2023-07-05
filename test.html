@@ -19,6 +19,24 @@
 body
 </body>
 <script>
-  console.log(first)
+/**
+ * @param {number[]} nums
+ * @return {number[][]}
+ */
+ function qSort(arr) {
+  let left = [], right = [], base = arr[0]
+  if (arr.length <= 1) {
+    return arr
+  }
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < base) {
+      left.push(arr[i])
+    } else if (arr[i] > base) {
+      right.push(arr[i])
+    }
+  }
+  return [...qSort(left), base, ...qSort(right)]
+}
+console.log(qSort([3,20,1])) 
 </script>
 </html>
