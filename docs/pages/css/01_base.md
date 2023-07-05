@@ -187,3 +187,14 @@ none （0 0 auto）; 表示空间不足时，该 item 依旧保持原有宽度 �
 ::: warning
 flex:1; 表示占满剩余空间大小，若剩余空间不足则该 item 项不显示!
 :::
+
+## 文本段落
+
+文本换行 \n
+
+```css
+.content {
+  white-space: pre-wrap; // 保留文本换行和空格
+  white-space: pre-line; // 仅保留文本换行
+}
+```
