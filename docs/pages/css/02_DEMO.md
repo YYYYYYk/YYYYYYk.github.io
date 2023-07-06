@@ -1,29 +1,166 @@
 # DEMO
+
 ## 清除默认样式
+
 ```css
 /* 避免ios滑动滚动条卡顿 */
-*{-webkit-overflow-scrolling : touch;-webkit-tap-highlight-color: rgba(255, 255, 255, 0);}
+* {
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
 /* reset */
-html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
-header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
-table{border-collapse:collapse;border-spacing:0;}
-caption,th{text-align:left;font-weight:normal;}
-html,body,fieldset,img,iframe,abbr{border:0;}
-i,cite,em,var,address,dfn{font-style:normal;}
-[hidefocus],summary{outline:0;}
-li{list-style:none;}
-h1,h2,h3,h4,h5,h6,small{font-size:100%;}
-sup,sub{font-size:83%;}
-pre,code,kbd,samp{font-family:inherit;}
-q:before,q:after{content:none;}
-textarea{overflow:auto;resize:none;}
-label,summary{cursor:default;}
-a,button{cursor:pointer;}
-h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
-del,ins,u,s,a,a:hover{text-decoration:none;}
-body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,\5b8b\4f53;color:#333;outline:0;}
-body{background:#fff;}
-a,a:hover{color:#333;}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+  margin: 0;
+  padding: 0;
+}
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th {
+  text-align: left;
+  font-weight: normal;
+}
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+  border: 0;
+}
+i,
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: normal;
+}
+[hidefocus],
+summary {
+  outline: 0;
+}
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  font-size: 100%;
+}
+sup,
+sub {
+  font-size: 83%;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: inherit;
+}
+q:before,
+q:after {
+  content: none;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+label,
+summary {
+  cursor: default;
+}
+a,
+button {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+  font-weight: bold;
+}
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+  text-decoration: none;
+}
+body,
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+  font: 12px/1.14 arial, \5b8b\4f53;
+  color: #333;
+  outline: 0;
+}
+body {
+  background: #fff;
+}
+a,
+a:hover {
+  color: #333;
+}
 
 /* 清除移动端 input 样式 */
 input {
@@ -36,22 +173,24 @@ input {
 
   /*去除input默认填充的背景颜色*/
   &:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px white inset; 
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
   }
 
   /* 清除input[type=number]的默认样式 */
-  &[type=number] {
+  &[type='number'] {
     -moz-appearance: textfield;
   }
 
-  &[type=number]::-webkit-inner-spin-button,
-  &[type=number]::-webkit-outer-spin-button {
+  &[type='number']::-webkit-inner-spin-button,
+  &[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
 }
 ```
+
 ## 单行/多行省略
+
 ```css
 /* 单行省略，需设置高度*/
 @mixin minHide {
@@ -69,6 +208,14 @@ input {
 ```
 
 ## 改变滚动条样式
+
+```css
+&::-webkit-scrollbar {
+  width: 8px;
+  background: white;
+}
+```
+
 ```css
 &::-webkit-scrollbar {
   width: 8px;
@@ -92,16 +239,20 @@ input {
 ```
 
 ## 三角形
+
 <CSS-TriangleDemo />
 
 ## 背景结合文字居中
+
 <CSS-List />
 
 ## 图片异常最佳实践
-``` html
-<img src='' alt="图片描述" onerror="this.classList.add('error')">
+
+```html
+<img src="" alt="图片描述" onerror="this.classList.add('error')" />
 ```
-``` css
+
+```css
 img.error {
   display: inline-block;
   transform: scale(1);
