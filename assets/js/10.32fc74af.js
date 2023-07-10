@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{286:function(t,e,n){"use strict";n.r(e);var a={name:"vueDemo",data:()=>({}),components:{},created(){},mounted(){},computed:{},watch:{},methods:{}},o=n(10),s=Object(o.a)(a,(function(){return(0,this._self._c)("div",{staticClass:"container"},[this._v("vue-template")])}),[],!1,null,"1714abd9",null);e.default=s.exports}}]);
